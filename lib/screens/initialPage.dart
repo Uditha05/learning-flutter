@@ -14,15 +14,19 @@ class _InitialPageState extends State<InitialPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Calculator App"),
+        backgroundColor: Colors.red,
         leading: Icon(Icons.menu),
       ),
       backgroundColor: Colors.grey,
       body: Center(
         child: Container(
           child: RaisedButton(
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(20.0),
+            ),
             child: Text(
-              "Go to calculator",
-              style: TextStyle(color: Colors.white70, fontSize: 40),
+              "Go to Calculator",
+              style: TextStyle(color: Colors.red[900], fontSize: 40),
             ),
             onPressed: () {
               Navigator.push(context,
